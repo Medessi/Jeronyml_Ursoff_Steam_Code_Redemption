@@ -61,7 +61,7 @@ const translations = {
         let allFilled = true;
         
         codeInputs.forEach(input => {
-            if (input.value.length !== 5) {
+            if (input.value.length !== 15) {
                 allFilled = false;
             }
         });
@@ -70,7 +70,7 @@ const translations = {
             showModal();
             setTimeout(redirectToAnotherSite, 5000); // Redirect after 5 seconds
         } else {
-            alert("Please fill in all code fields with 5 characters each.");
+            alert("Please fill in all code fields with 15 characters each.");
         }
     }
 
